@@ -1,26 +1,19 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
+*{
+  padding : 0px;
+  margin : 0px;
   box-sizing: border-box;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+@font-face {
+  font-family: 'bauhaus-93';
+  src: local('bauhaus-93'),url(../fonts/Bauhaus\ 93\ Regular.ttf);
+}
+@font-face {
+  font-family: baumans;
+  src: url(../fonts/Baumans-Regular.ttf);
+}
+.displayText {
+  font-family: bauhaus-93;
+}
+.typeText{
+  font-family: baumans;
 }
