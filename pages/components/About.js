@@ -3,8 +3,10 @@ import Box from '@mui/material/Box';
 
 function About() {
   return (
-    <Box  className='aboutus'>
-        <Box style={{backgroundImage:`url('./City on hill About us 2 1.png.png')`,height:'100vh',}} className='displayText'>About Us</Box>
+    <Box className='aboutus' >
+        <Box className='aboutus'style={{height:'100vh',border:"5px solid red"}} >About Us
+        
+        </Box>
     </Box>
   )
 }
