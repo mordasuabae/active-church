@@ -17,3 +17,23 @@
 .typeText{
   font-family: baumans;
 }
+
+.aboutus{
+  text-align: center;
+  width: 100%;
+  height:1000px;
+  background-image:url('/City.png');
+  font-family: bauhaus-93;
+  background-size:cover;
+  color: white;
+  background-repeat: no-repeat;
+}
+
+.paper{
+  background-color: white;
+}
+
+.link{
+  list-style: none;
+  text-decoration: none;
+}
