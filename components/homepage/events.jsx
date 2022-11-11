@@ -161,7 +161,8 @@ function Events() {
 
 const style = {
   container: {
-    overflow : 'hidden'
+    overflow : 'hidden',
+    position : 'relative'
   },
   header: {
     display: "flex",

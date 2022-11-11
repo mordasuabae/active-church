@@ -32,4 +32,5 @@ const navbar = {
     position:"fixed",
     width:"100%",
     height:"62px",
+    zIndex : '200'
 }
