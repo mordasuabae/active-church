@@ -1,11 +1,11 @@
-*{
-  padding : 0px;
-  margin : 0px;
+* {
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
 }
 @font-face {
-  font-family: 'bauhaus-93';
-  src: local('bauhaus-93'),url(../fonts/Bauhaus\ 93\ Regular.ttf);
+  font-family: "bauhaus-93";
+  src: local("bauhaus-93"), url(../fonts/Bauhaus\ 93\ Regular.ttf);
 }
 @font-face {
   font-family: baumans;
@@ -14,6 +14,88 @@
 .displayText {
   font-family: bauhaus-93;
 }
-.typeText{
+.typeText {
   font-family: baumans;
+}
+.box1 {
+  width: 70%;
+  max-height: 130vh;
+  padding: 32px 0px;
+  overflow-y: scroll;
+  position: relative;
+  padding-right: 20px;
+}
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: carousel 20s linear infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+.carousel-off {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* animation: carousel 20s ease-in infinite; */
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+.overlay2{
+  width : 100%;
+  height : 92vh;
+  animation: carousel2 30s ease-in infinite;
+}
+.carousel--2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: carousel--2 60s ease-in infinite;
+  background : green;
+  animation-delay: 7.5s;
+}
+
+.overlay2b{
+  animation: carousel2b 30s ease-in infinite;
+  animation-direction: alternate;
+  animation-delay: 20s;
+  
+}
+
+@keyframes carousel {
+  0%{
+    transform : translateY(0%)
+  }
+  100% {
+    transform: translateY(10%);
+  }
+}
+@keyframes carousel--2 {
+  0%{
+    transform : translateY(-100%)
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+@keyframes carousel2 {
+
+  100% {
+    transform: translateY(90vh);
+  }
+}
+@keyframes carousel2b {
+  100%{
+    transform: translateY(90vh)
+  }
+}
+.box1::-webkit-scrollbar {
+  position: relative;
+  z-index: 100;
+  left: 30px;
+  background: rgba(103, 107, 138, 255);
+}
+.box1::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  background: rgba(138, 140, 187, 255);
 }
