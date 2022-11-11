@@ -17,6 +17,28 @@
 .typeText {
   font-family: baumans;
 }
+<<<<<<< HEAD
+
+.aboutus{
+  text-align: center;
+  width: 100%;
+  height:1000px;
+  background-image:url('/City.png');
+  font-family: bauhaus-93;
+  background-size:cover;
+  color: white;
+  background-repeat: no-repeat;
+}
+
+.paper{
+  background-color: white;
+}
+
+.link{
+  list-style: none;
+  text-decoration: none;
+}
+=======
 .box1 {
   width: 70%;
   max-height: 130vh;
@@ -99,3 +121,4 @@
   border-radius: 25px;
   background: rgba(138, 140, 187, 255);
 }
+>>>>>>> 70fabfff1dc947ca8a44c49dba7edd41bb063d9b
