@@ -1,5 +1,6 @@
 import { Box, Button, Typography, Input, Grid, TextField } from "@mui/material";
 import React from "react";
+import axios from "axios";
 
 const ContactUs = () => {
   return (
@@ -68,24 +69,32 @@ const ContactUs = () => {
               Name & Surname
             </Grid>
             <Grid item xs={8}>
-              <Input sx={{ borderRadius: "5px", border: 1 }} style={{ border: '2px solid' }}/>
+              <Input
+                name="name"
+                sx={{ borderRadius: "5px", border: 1 }}
+                style={{ border: "2px solid" }}
+              />
             </Grid>
             <Grid item xs={4}>
               Email Address
             </Grid>
             <Grid item xs={8}>
-              <Input sx={{ borderRadius: "5px", border: 1 }} style={{ border: '2px solid' }} />
+              <Input
+                name="email"
+                sx={{ borderRadius: "5px", border: 1 }}
+                style={{ border: "2px solid" }}
+              />
             </Grid>
             <Grid item xs={4}>
               Description
             </Grid>
             <Grid item xs={8}>
               <TextField
-                sx={{ borderRadius: "5px", border: 1 ,borderColor:'#111'}}
+                sx={{ borderRadius: "5px", border: 1, borderColor: "#111" }}
                 multiline={true}
                 height={20}
                 color=""
-                style={{ border: '2px solid' }}
+                style={{ border: "2px solid" }}
               />
             </Grid>
             <Button
