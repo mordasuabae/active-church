@@ -12,9 +12,9 @@ export default function Navbar() {
     <Box>
     <Box sx={navbar}>
         <Link href="/">
-        <img src="/the-active-church white.png" width={130} alt="church Logo"/>
+        <img src="/the-active-church white.png" width={90} alt="church Logo"/>
         </Link>
-        <DragHandleIcon sx={{ color:"white", fontSize:"55px", marginRight:"40px"}}/>
+        <DragHandleIcon sx={{ color:"white", fontSize:"55px", marginRight:"70px"}}/>
     </Box>
     </Box>
   )
@@ -27,7 +27,7 @@ const navbar = {
     justifyContent:"space-between",
     cursor:"pointer",
     paddingTop:"20px",
-    paddingLeft:"40px",
+    paddingLeft:"120px",
     background:"#e1eef5",
     position:"fixed",
     width:"100%",

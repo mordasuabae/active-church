@@ -33,13 +33,13 @@ export default function Banner() {
               sx={{ display: { xs: "none", sm: "block", md: "bloack" } }}
             >
               <Typography className="displayText" sx={Text} data-text="A CITY">
-                A CITY
+                A City
               </Typography>
               <Typography className="displayText" sx={Text2}>
                 on a hill
               </Typography>
               <Typography style={Text3}>
-                A Church of the Lord of jesus Christ , The Salt
+                A Church of the Lord of Jesus Christ , The Salt
                 <span>of the Earth. We build the Community</span>
               </Typography>
 
@@ -76,9 +76,9 @@ const Text2 = {
   alignItems: "center",
   justifyContent: "content",
   justifyContent: "space-between",
-  width: "560px",
+  width: "500px",
   paddingLeft: "10px",
-  letterSpacing: "40px",
+  letterSpacing: "36.5px",
   marginTop: "10px",
 };
 
@@ -103,5 +103,5 @@ const info = {
   justifyContent: "center",
   margin: "10px",
   marginTop: "20px",
-  borderRadius: "5px",
+  borderRadius: "2px",
 };

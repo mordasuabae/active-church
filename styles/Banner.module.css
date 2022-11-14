@@ -11,8 +11,8 @@
 
 .BirdGif{
     background-image: url('../public/output-onlinegiftools.gif');
-    width: 100%;
-    height: 120px;
+    width: 250px;
+    height: 110px;
     background-repeat:no-repeat;
     animation: cloudOne 15s linear infinite;
     position: absolute;
@@ -21,6 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid red;
   }
   
   .cloud4Background{
@@ -52,7 +53,7 @@
   .fontContainer{
     padding-left:100px;
     position: absolute;
-    top: 120px;
+    top: 90px;
     left: 20px;
   
   }
