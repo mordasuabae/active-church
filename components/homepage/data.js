@@ -26,9 +26,9 @@ export const data = [
         type : "Children's Church",
         time : '10:00 am - 11:00am',
     },
-    {
-        Title : 'Debate Night',
-        type : 'Active Youth',
-        time : '18:00pm - 19:00pm'
-    }    
+    // {
+    //     Title : 'Debate Night',
+    //     type : 'Active Youth',
+    //     time : '18:00pm - 19:00pm'
+    // }    
 ]
