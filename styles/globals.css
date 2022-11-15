@@ -124,3 +124,22 @@
   background: #e1eef5;
   box-shadow: 1px 10px 12px 0px rgba(0,0,0,0.18);
 }
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  background: #aab5bb;
+  height: 100px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #e1eef5;
+  border: 100vw;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: yellow;
+}
