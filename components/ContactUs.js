@@ -1,6 +1,6 @@
 import { Box, Button, Typography, Input, Grid, TextField } from "@mui/material";
 import React from "react";
-import axios from "axios";
+// import axios from "axios";
 
 const ContactUs = () => {
   return (
