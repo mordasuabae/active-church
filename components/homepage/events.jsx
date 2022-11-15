@@ -15,13 +15,8 @@ function Events() {
     { img: "Bible", type: "category", eventType: "Bible Studies" },
     { img: "Music", type: "category", eventType: "Active Worship" },
     { img: "Kids", type: "category", eventType: "Children's Church" },
-    // {
-    //   img: "Active-Foundation-Icon",
-    //   type: "category",
-    //   eventType: "Active Foundation",
-    // },
-    { img: "Instagram", href: "https://www.istagram.com" },
-    { img: "Twitter", href: "https://www.twitter.com" },
+    { img: "Instagram", href: "https://www.instagram.com/theactivechurch" },
+    { img: "Twitter", href: "https://www.twitter.com/theactivechurch" },
     { img: "Facebook", href: "https://www.facebook.com/theactivechurch/" },
   ];
   const [currentState, setCurrentState] = React.useState({
@@ -93,6 +88,7 @@ function Events() {
               </Tooltip>
             ) : (
               <Link
+                 
                 target={"_blank"}
                 style={style.icon}
                 href={icon.href ? icon?.href : "#"}
@@ -111,18 +107,19 @@ function Events() {
       </Box>
       <Box style={style.main}>
         <Box className={styles.box1}>
-          <Box className = {styles.carousel}>
+          
           {events.map((event) => (
+            <>
             <Box
-              className={styles.event}
-              sx={{
-                ...style.event,
+            className={styles.event}
+            sx={{
+              ...style.event,
                 background: `url(${event?.thumbnail})!important`,
                 backgroundRepeat: "no-repeat !important",
                 backgroundSize: "100% 750px  !important",
                 objectFit: "contain !important",
               }}
-            >
+              >
               <Box className={styles["event-overlay"]}></Box>
               <Box sx={style.eventText}>
                 <Typography sx={style.eventType}>{event.type}</Typography>
@@ -132,20 +129,16 @@ function Events() {
                 </Box>
               </Box>
             </Box>
-          ))}
-          </Box>
-          <Box className = {styles.carousel}>
-          {events.map((event) => (
             <Box
-              className={styles.event}
-              sx={{
-                ...style.event,
+            className={`${styles.event} ${styles.event2}`}
+            sx={{
+              ...style.event,
                 background: `url(${event?.thumbnail})!important`,
                 backgroundRepeat: "no-repeat !important",
                 backgroundSize: "100% 750px  !important",
                 objectFit: "contain !important",
               }}
-            >
+              >
               <Box className={styles["event-overlay"]}></Box>
               <Box sx={style.eventText}>
                 <Typography sx={style.eventType}>{event.type}</Typography>
@@ -155,9 +148,9 @@ function Events() {
                 </Box>
               </Box>
             </Box>
+              </>
           ))}
-          </Box>
-        </Box>
+          </Box>       
 
         <Box sx={style.box2}>
           <Box sx={{ ...style.upcomingEvent, height: "45vh" }}></Box>
@@ -225,9 +218,9 @@ const style = {
     color: "white",
     alignItems: "center",
     fontFamily: displayText,
-    fontSize: "42px",
+    fontSize: "38px",
     height: "74px",
-    paddingLeft: "34px",
+    paddingLeft: "68px",
     boxShadow: "0px 10px 15px -10px #222",
   },
   event: {},
