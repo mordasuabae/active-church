@@ -1,18 +1,19 @@
-import React from 'react'
-import ReactPLayer from 'react-player'
+import { Box } from "@mui/material";
+import React from "react";
 
 
 export default function BannerVideo() {
-
   return (
-    <div style={{opacity:"0.8"}}>
-        <ReactPLayer
-        width="270px"
-        height="100px"
-        url="https://www.youtube.com/watch?v=7KDRqBpT8NA"
-        playing={true}
-         />
-        
-    </div>
-  )
+    <Box style={{ opacity: "0.8", marginTop: "40px" , border:"1px solid red"}}>
+      <iframe
+        width="270"
+        height="145"
+        src="https://www.youtube.com/embed/9e3Vqyp8kr8?autoplay=1&mute=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </Box>
+  );
 }

@@ -13,8 +13,10 @@ export default function Home() {
     <Box>
       <Banner />
       <Events />
-      {/* ContactUs */}
+
       <About />
+
+      {/* ContactUs */}
       <ContactUs />
       {/* Footer */}
       <Footer />
