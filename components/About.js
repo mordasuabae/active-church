@@ -39,6 +39,7 @@ const Item = styled(Paper)(({ theme }) => ({
         <Grid container spacing={2}>
         <Grid  item xs={12}>
         <Box sx={{borderBottom:'5px wheat solid',width:'100%',}}></Box>
+            
         <Item>
          
           <Box className='typeText' sx={{color:'white',display:'flex',justifyContent:'center',fontSize:'40px',alignItems:'center',}}>
@@ -48,8 +49,9 @@ const Item = styled(Paper)(({ theme }) => ({
           
             
             </Box>
-            
             <Box sx={{display:'flex',padding:'30px 0'}}>
+                
+             
               <Box sx={{padding:'0 80px'}}>
                 <Typography sx={{margin:'60px 0 0 0',textAlign:'justify',}}>
                 <Link className='link' style={{color:'wheat'}} href='/'><b>Lorem ipsum</b></Link> dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
@@ -59,8 +61,10 @@ const Item = styled(Paper)(({ theme }) => ({
               <Typography sx={{margin:'50px 0 0 65%',justifyContent:'flex-end'}}><Link className='link' style={{color:'wheat'}} href='/'><b>More Info </b>&rarr; </Link> </Typography>
               <Box className='layer' sx={{margin:'-60px 0 0 -75px',width:'130px',height:'130px',backgroundImage:`url('/Flowers.png')`,backgroundRepeat:'no-repeat',backgroundSize:'cover'}}>
                 </Box>
-              
               </Box>
+                
+            
+              
               <Box sx={{padding:'0 80px'}}>
                 <Typography sx={{margin:'60px 0 0 0',textAlign:'justify'}} >
                 <Link className='link' style={{color:'wheat'}} href='/'><b>Lorem ipsum</b></Link>  dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
@@ -68,8 +72,9 @@ const Item = styled(Paper)(({ theme }) => ({
                 </Typography>
                 <Typography sx={{margin:'60px 0 0 0',textAlign:'justify'}}><Link className='link' style={{color:'wheat'}} href='/'><b>Rerum</b></Link> sed nulla eum vero expedita ex delectus voluptates rem at neque quos facere sequi unde optio aliquam!</Typography>
                 <Box sx={{margin:'-550px 0 0 115%',width:'145px',height:'130px',backgroundImage:`url('/Flower.png')`,backgroundRepeat:'no-repeat',backgroundSize:'cover'}}>
-                 
                 </Box>
+                <img src='/Tree 1.png'/>
+                <img src='/Tree 1.png'/>
                 
                </Box>
             </Box>
