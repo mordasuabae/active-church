@@ -135,12 +135,11 @@
   padding  : 28px 0px;
   overflow : hidden;
   height : 130vh;
+  transition : 1s;
+  
 }
-.carousel {
-  /* background: red; */
-  height : 130vh;
-  overflow : hidden;
-}
+
+
 .event{
   background: purple;
     height: 750px;
@@ -154,16 +153,32 @@
     transition: 1s;
     margin-left : auto;
     margin-right:70px;
-    margin-bottom: 100%;
+    margin-bottom: 10%;
     animation: carousel 10s linear infinite; 
+    
+}
+.event2{
+  /* margin :auto 0px; */
+  transform: translateY(-10%);
+  animation: carousel2 10s linear infinite;
+  position: relative;
+  bottom : 20%;
 }
 @keyframes carousel{
   0%{
-    transform : translateY(0)
+    transform : translateY(0%)
   }
   100%{
-    transform : translateY(100%)
+    transform : translateY(130vh)
 
+  }
+}
+@keyframes carousel2{
+  0%{
+    transform : translateY(10%)
+  }
+  100%{
+    transform: translateY(130vh);
   }
 }
 .event-overlay{
