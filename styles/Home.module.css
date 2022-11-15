@@ -127,3 +127,84 @@
     filter: invert(1);
   }
 }
+
+/* EVENTS SECTION */
+
+.box1{
+  width : 65%;
+  padding  : 28px 0px;
+  overflow : hidden;
+  height : 130vh;
+}
+.carousel {
+  /* background: red; */
+  height : 130vh;
+  overflow : hidden;
+}
+.event{
+  background: purple;
+    height: 750px;
+    position: relative;
+    width: 80%;
+    z-index: 2;
+    border-radius: 15px;
+    box-shadow: 1px 1px 20px #111;
+    /* marginBottom: "32px", */
+    cursor: pointer;
+    transition: 1s;
+    margin-left : auto;
+    margin-right:70px;
+    margin-bottom: 100%;
+    animation: carousel 10s linear infinite; 
+}
+@keyframes carousel{
+  0%{
+    transform : translateY(0)
+  }
+  100%{
+    transform : translateY(100%)
+
+  }
+}
+.event-overlay{
+  position : absolute;
+  background : black;
+  width : 100%;
+  height : 750px;
+  opacity : 0.3
+}
+.dots {
+  position : absolute;
+  animation: dots 10s linear infinite;
+}
+.dots-2{
+  animation: dots2 10s linear infinite;
+}
+@keyframes dots{
+  0%{
+    bottom : 0%
+  }
+  100%{
+    bottom : 100%;
+    transform : translateY(-5vh)
+  }
+}
+@keyframes dots2{
+  0%{
+    bottom : 0%
+  }
+  100%{
+    bottom : 100%;
+    transform : translateY(-100vh)
+  }
+}
+.box1::-webkit-scrollbar {
+  position: relative;
+  z-index: 100;
+  left: 30px;
+  background: rgba(103, 107, 138, 255);
+}
+.box1::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  background: rgba(138, 140, 187, 255);
+}

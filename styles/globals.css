@@ -119,3 +119,8 @@
   border-radius: 25px;
   background: rgba(138, 140, 187, 255);
 }
+
+.header-bg {
+  background: #e1eef5;
+  box-shadow: 1px 10px 12px 0px rgba(0,0,0,0.18);
+}
