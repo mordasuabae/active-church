@@ -16,6 +16,8 @@
 }
 .typeText {
   font-family: baumans;
+  font-weight: 800;
+  font-weight: bold ;
 }
 
 .aboutus{
@@ -23,10 +25,11 @@
   width: 100%;
   height:1000px;
   background-image:url('/City.png');
-  font-family: bauhaus-93;
-  background-size:cover;
+  background-size:contain;
   color: white;
   background-repeat: no-repeat;
+  font-size: large;
+  font-family: baumans;
 }
 
 .paper{
@@ -36,6 +39,7 @@
 .link{
   list-style: none;
   text-decoration: none;
+  font-family: baumans;
 }
 .box1 {
   width: 70%;
@@ -120,7 +124,28 @@
   background: rgba(138, 140, 187, 255);
 }
 
+
 .header-bg {
   background: #e1eef5;
   box-shadow: 1px 10px 12px 0px rgba(0,0,0,0.18);
 }
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  background: #aab5bb;
+  height: 100px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #e1eef5;
+  border: 100vw;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: yellow;
+}
+
