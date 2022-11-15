@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactPLayer from 'react-player'
+// import ReactPLayer from 'react-player'
 
 
 export default function BannerVideo() {
