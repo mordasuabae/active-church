@@ -13,10 +13,9 @@ export default function Home() {
     <Box>
       <Banner />
       <Events />
-
       {/* ContactUs */}
-      <ContactUs />
       <About />
+      <ContactUs />
       {/* Footer */}
       <Footer />
     </Box>

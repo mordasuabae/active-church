@@ -7,35 +7,22 @@
     background-repeat: no-repeat;
     background-position: bottom;
   }
-
-
-.BirdGif{
-    background-image: url('../public/output-onlinegiftools.gif');
-    width: 100%;
-    height: 120px;
-    background-repeat:no-repeat;
-    animation: cloudOne 15s linear infinite;
-    position: absolute;
-    background-position: 10 0;
-    animation-direction: reverse;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   
   .cloud4Background{
     background-image: url('../public/Cloud\ 4.png');
-    width: 100%;
+    width: 50%;
     height: 220px;
     background-repeat:no-repeat;
     padding-top: 80px;
-    animation: cloudOne 19s linear infinite;
+    animation: cloudFour 9s linear infinite;
     position: relative;
     background-position: 10 0;
     animation-direction: alternate-reverse;
+    margin-right: 350px;
+    z-index: 200px;
   }
   
-  @keyframes cloudOne {
+  @keyframes cloudFour {
     from {
       background-position: 0 0;
     }
@@ -52,15 +39,133 @@
   .fontContainer{
     padding-left:100px;
     position: absolute;
-    top: 120px;
-    left: 20px;
+    top: 90px;
+    left: 0px;
   
   }
 
   .Sermon{
     width: 50px;
     position: absolute;
-    margin-right: 440px;
-    padding-top: 200px;
+    margin-right: 140px;
+    padding-top: 20px;
     border-radius: 25px;
   }
+
+
+
+
+.BirdGif{
+  background: transparent;
+  width: 170px;
+  height: 120px;
+  background-repeat:no-repeat;
+  position: absolute;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 200px;
+  margin-top: 50px;
+  padding-top: 45px;
+  padding-right: 60px;
+}
+
+.bird {
+  background: black;
+  border-radius: 50% 50% 20% 20%;
+  color: white;
+  height: 11px;
+  width: 11px;
+  position: absolute;
+  animation: bird-ani 0.8s linear infinite;
+}
+
+.bird::after,
+.bird::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.bird::after{
+  border-radius: 100% 100% 0 0;
+  box-shadow: inset 0px 5px 0px black;
+  width: 70px;
+  height: 70px;
+  margin-top: -5px;
+  margin-left: -35px;
+  transform-origin: 100% 0%;
+  animation: wing 7s linear infinite;
+}
+
+.bird::before{
+  background: #FFC37F;
+  border-radius: 100% 0% 20% 0%;
+  margin-top: 1px;
+  margin-left: -1.3px;
+  width: 4px;
+  height: 4px;
+  transform: rotateZ(45deg);
+}
+
+@keyframes wing {
+  50% {
+    transform: rotateX(-1440deg);
+  }
+}
+
+@keyframes bird-ani{
+  40% {
+    transform: rotateZ(2deg) translateX(2px) translateY(10px) translateZ(0);
+  } 
+
+  800% {
+    transform: rotateZ(2-deg) translateX(5px) translateY(8px) translateZ(0);
+  }
+}
+
+
+/* bird 2 */
+
+.bird2{
+  background: black;
+  border-radius: 50% 50% 20% 20%;
+  color: white;
+  height: 7px;
+  width: 7px;
+  position: absolute;
+  animation: bird-ani 0.8s linear infinite;
+  margin-left: 60px;
+  margin-bottom: 60px;
+}
+
+.bird2::after,
+.bird2::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.bird2::after{
+  border-radius: 100% 100% 0 0;
+  box-shadow: inset 0px 5px 0px black;
+  width: 30px;
+  height: 30px;
+  margin-top: -3px;
+  margin-left: -15.1px;
+  transform-origin: 100% 0%;
+  animation: wing 7s linear infinite;
+}
+
+.bird2::before{
+  background: #FFC37F;
+  border-radius: 100% 0% 20% 0%;
+  margin-top: 1px;
+  margin-left: -1px;
+  width: 2px;
+  height: 2px;
+  transform: rotateZ(45deg);
+}
