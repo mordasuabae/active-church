@@ -40,15 +40,15 @@ function Events() {
   const bgSize = 28;
   return (
     <Box sx={style.container}>
-      <Box sx={style.overlay1}>
+      {/* <Box sx={style.overlay1}>
         <Image
           style={style.overlay1}
-          width = {800}
-          height = {800}
+          width={800}
+          height={800}
           src="/bg1.png"
           alt="b"
         />
-      </Box>
+      </Box> */}
       <Image
         className={styles.dots}
         fill={true}
@@ -87,7 +87,6 @@ function Events() {
               </Tooltip>
             ) : (
               <Link
-                 
                 target={"_blank"}
                 style={style.icon}
                 href={icon.href ? icon?.href : "#"}
@@ -107,49 +106,106 @@ function Events() {
       <Box style={style.main}>
         <Box className={styles.box1}>
           <Box sx={style.divider}></Box>
-          {events.map((event) => (
-            <>
-            <Box
-            className={styles.event}
-            sx={{
-              ...style.event,
-                background: `url(${event?.thumbnail})!important`,
-                backgroundRepeat: "no-repeat !important",
-                backgroundSize: "100% 750px  !important",
-                objectFit: "contain !important",
-              }}
-              >
-              <Box className={styles["event-overlay"]}></Box>
-              <Box sx={style.eventText}>
-                <Typography sx={style.eventType}>{event.type}</Typography>
-                <Box sx={{ display: "flex" }}>
-                  <Typography sx={style.eventTitle}>{event.Title}</Typography>
-                  <Typography sx={style.eventTitle}>{event.time}</Typography>
+          
+            {events.map((event) => (
+              <Box className={styles["event-wrapper"]}>
+                <Box
+                  className={styles.event}
+                  sx={{
+                    ...style.event,
+                    background: `url(${event?.thumbnail})!important`,
+                    backgroundRepeat: "no-repeat !important",
+                    backgroundSize: "100% 750px  !important",
+                    objectFit: "contain !important",
+                  }}
+                >
+                  <Box className={styles["event-overlay"]}></Box>
+                  <Box sx={style.eventText}>
+                    <Typography sx={style.eventType}>{event.type}</Typography>
+                    <Box sx={{ display: "flex" }}>
+                      <Typography sx={style.eventTitle}>
+                        {event.Title}1
+                      </Typography>
+                      <Typography sx={style.eventTitle}>
+                        {event.time}
+                      </Typography>
+                    </Box>
+                  </Box>
+                </Box>
+                <Box
+                  className={styles.event}
+                  sx={{
+                    ...style.event,
+                    background: `url(${event?.thumbnail})!important`,
+                    backgroundRepeat: "no-repeat !important",
+                    backgroundSize: "100% 750px  !important",
+                    objectFit: "contain !important",
+                  }}
+                >
+                  <Box className={styles["event-overlay"]}></Box>
+                  <Box sx={style.eventText}>
+                    <Typography sx={style.eventType}>{event.type}</Typography>
+                    <Box sx={{ display: "flex" }}>
+                      <Typography sx={style.eventTitle}>
+                        {event.Title}2
+                      </Typography>
+                      <Typography sx={style.eventTitle}>
+                        {event.time}
+                      </Typography>
+                    </Box>
+                  </Box>
+                </Box>
+                <Box
+                  className={styles.event}
+                  sx={{
+                    ...style.event,
+                    background: `url(${event?.thumbnail})!important`,
+                    backgroundRepeat: "no-repeat !important",
+                    backgroundSize: "100% 750px  !important",
+                    objectFit: "contain !important",
+                  }}
+                >
+                  <Box className={styles["event-overlay"]}></Box>
+                  <Box sx={style.eventText}>
+                    <Typography sx={style.eventType}>{event.type}</Typography>
+                    <Box sx={{ display: "flex" }}>
+                      <Typography sx={style.eventTitle}>
+                        {event.Title}3
+                      </Typography>
+                      <Typography sx={style.eventTitle}>
+                        {event.time}
+                      </Typography>
+                    </Box>
+                  </Box>
+                </Box>
+                <Box
+                  className={styles.event}
+                  sx={{
+                    ...style.event,
+                    background: `url(${event?.thumbnail})!important`,
+                    backgroundRepeat: "no-repeat !important",
+                    backgroundSize: "100% 750px  !important",
+                    objectFit: "contain !important",
+                  }}
+                >
+                  <Box className={styles["event-overlay"]}></Box>
+                  <Box sx={style.eventText}>
+                    <Typography sx={style.eventType}>{event.type}</Typography>
+                    <Box sx={{ display: "flex" }}>
+                      <Typography sx={style.eventTitle}>
+                        {event.Title}4
+
+                      </Typography>
+                      <Typography sx={style.eventTitle}>
+                        {event.time}
+                      </Typography>
+                    </Box>
+                  </Box>
                 </Box>
               </Box>
-            </Box>
-            <Box
-            className={`${styles.event} ${styles.event2}`}
-            sx={{
-              ...style.event,
-                background: `url(${event?.thumbnail})!important`,
-                backgroundRepeat: "no-repeat !important",
-                backgroundSize: "100% 750px  !important",
-                objectFit: "contain !important",
-              }}
-              >
-              <Box className={styles["event-overlay"]}></Box>
-              <Box sx={style.eventText}>
-                <Typography sx={style.eventType}>{event.type}</Typography>
-                <Box sx={{ display: "flex" }}>
-                  <Typography sx={style.eventTitle}>{event.Title}</Typography>
-                  <Typography sx={style.eventTitle}>{event.time}</Typography>
-                </Box>
-              </Box>
-            </Box>
-              </>
-          ))}
-          </Box>       
+            ))}
+          
+        </Box>
 
         <Box sx={style.box2}>
           <Box sx={{ ...style.upcomingEvent, height: "45vh" }}></Box>
@@ -165,6 +221,10 @@ const style = {
   container: {
     overflow: "hidden",
     position: "relative",
+    // background : 'red',
+    // zIndex : 100
+    
+    background: "#44475D",
   },
   header: {
     display: "flex",
@@ -182,16 +242,19 @@ const style = {
   },
   main: {
     width: "100%",
-    background: "#44475D",
     display: "flex",
+    background : 'url(/bg1.png)',
+    backgroundRepeat : 'no-repeat',
+    objectFit : 'contain',
+    backgroundSize : '1100px'
   },
   overlay1: {
     position: "absolute",
     top: "-20px",
-    left : '-80px',
-    width : '100%',
-    height : '120vh',
-    transform : 'scale(0.9,0.9)'
+    left: "-80px",
+    width: "100%",
+    height: "120vh",
+    transform: "scale(0.9,0.9)",
   },
   overlay2: {
     position: "absolute",
@@ -258,13 +321,13 @@ const style = {
     marginBottom: "17px",
     cursor: "pointer",
   },
-  divider : {
-    height : '140vh',
-    width : '20px',
-    background : 'rgba(103, 107, 138, 255)',
-    position : 'absolute',
-    left : '63.5%',
-    bottom : '0px'
-  }
+  divider: {
+    height: "140vh",
+    width: "20px",
+    background: "rgba(103, 107, 138, 255)",
+    position: "absolute",
+    left: "63.5%",
+    bottom: "0px",
+  },
 };
 export default Events;
