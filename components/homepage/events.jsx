@@ -43,9 +43,8 @@ function Events() {
       <Box sx={style.overlay1}>
         <Image
           style={style.overlay1}
-          width={1200}
-          height={720}
-          layout="contain"
+          width = {800}
+          height = {800}
           src="/bg1.png"
           alt="b"
         />
@@ -107,7 +106,7 @@ function Events() {
       </Box>
       <Box style={style.main}>
         <Box className={styles.box1}>
-          
+          <Box sx={style.divider}></Box>
           {events.map((event) => (
             <>
             <Box
@@ -188,7 +187,11 @@ const style = {
   },
   overlay1: {
     position: "absolute",
-    top: "30px",
+    top: "-20px",
+    left : '-80px',
+    width : '100%',
+    height : '120vh',
+    transform : 'scale(0.9,0.9)'
   },
   overlay2: {
     position: "absolute",
@@ -255,5 +258,13 @@ const style = {
     marginBottom: "17px",
     cursor: "pointer",
   },
+  divider : {
+    height : '140vh',
+    width : '20px',
+    background : 'rgba(103, 107, 138, 255)',
+    position : 'absolute',
+    left : '63.5%',
+    bottom : '0px'
+  }
 };
 export default Events;

@@ -162,7 +162,7 @@
   transform: translateY(-10%);
   animation: carousel2 10s linear infinite;
   position: relative;
-  bottom : 20%;
+  bottom : 10%;
 }
 @keyframes carousel{
   0%{
@@ -175,10 +175,12 @@
 }
 @keyframes carousel2{
   0%{
-    transform : translateY(10%)
+    transform : translateY(0%);
+    
   }
   100%{
     transform: translateY(130vh);
+    
   }
 }
 .event-overlay{
