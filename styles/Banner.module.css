@@ -7,6 +7,16 @@
     background-repeat: no-repeat;
     background-position: bottom;
   }
+
+  .header{
+    position: fixed;
+    overflow: hidden;
+  }
+
+  .header-bg {
+  background-color: black;
+  }
+
   
   .cloud4Background{
     background-image: url('../public/Cloud\ 4.png');
@@ -53,6 +63,7 @@
     padding-top: 20px;
     border-radius: 25px;
   }
+
 
 
 
