@@ -31,8 +31,7 @@ export default function Banner() {
                   justifyContent: "Center",
                   position: "absolute",
                   marginLeft: "500px",
-                  opacity: "0.7",
-                  paddingBottom: "140px",
+                  paddingBottom: "200px",
                 }}
               >
                 <img src="/Cloud2.png" alt="cloud image 2" />
@@ -41,6 +40,13 @@ export default function Banner() {
               <Box className={style.BirdGif}>
                 <label for="" className={style.bird}></label>
                 <label for="" className={style.bird2}></label>
+                <label for="" className={style.bird3}></label>
+                <label for="" className={style.bird4}></label>
+                <label for="" className={style.bird5}></label>
+                <label for="" className={style.bird6}></label>
+                <label for="" className={style.bird7}></label>
+                <label for="" className={style.bird8}></label>
+                <label for="" className={style.bird9}></label>
               </Box>
 
               <Box
@@ -51,12 +57,12 @@ export default function Banner() {
                   alignItems: "center",
                   justifyContent: "Center",
                   position: "absolute",
-                  marginLeft: "340px",
+                  marginLeft: "350px",
                   marginTop: "180px",
                   opacity: "0.7",
                 }}
               >
-                <img src="/Cloud1.png" alt="small cloud" />
+                <img src="/Cloud1.png" alt="small cloud" width={110} height={110} />
               </Box>
 
               <Box className={style.cloud4Background}></Box>
@@ -85,7 +91,7 @@ export default function Banner() {
                     on a hill
                   </Typography>
                   <Typography style={Text3}>
-                    A Church of the Lord of Jesus Christ , The Salt
+                    A Church of the Lord of Jesus Christ, The Salt
                     <span>of the Earth. We build the Community</span>
                   </Typography>
 
@@ -132,8 +138,9 @@ const Text3 = {
   display: "Flex",
   paddingLeft: "10px",
   flexDirection: "column",
-  fontSize: "20px",
+  fontSize: "17px",
   color: "hsl(257deg 18% 32%)",
+  lineHeight:"19px"
 };
 
 const info = {

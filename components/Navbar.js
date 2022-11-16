@@ -29,7 +29,7 @@ useEffect(() => {
         <Link href="/">
         <img src="/the-active-church white.png" width={90} alt="church Logo"/>
         </Link>
-        <Box sx={{marginRight:"113px"}}>
+        <Box sx={{marginRight:"73px"}}>
         <Drawer/>
         </Box>
     </Box>
@@ -43,12 +43,12 @@ const navbar = {
     justifyContent:"Center",
     justifyContent:"space-between",
     cursor:"pointer",
-    paddingTop:"6px",
+    paddingTop:"15px",
     paddingLeft:"105px",
     background:"transparent",
     position:"fixed",
     width:"100%",
-    height:"50px",
+    height:"60px",
     zIndex : '200',
     // transition:".3s ease-in"
 }
