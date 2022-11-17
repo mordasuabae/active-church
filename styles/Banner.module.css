@@ -8,15 +8,6 @@
     background-position: bottom;
   }
 
-  .header{
-    position: fixed;
-    overflow: hidden;
-  }
-
-  .header-bg {
-  background-color: black;
-  }
-
   
   .cloud4Background{
     background-image: url('../public/Cloud\ 4.png');

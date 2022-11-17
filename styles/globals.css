@@ -41,3 +41,8 @@
   text-decoration: none;
   font-family: baumans;
 }
+
+.header-bg {
+  background: #e1eef5;
+  box-shadow: 1px 10px 12px 0px rgba(0,0,0,0.18);
+}
