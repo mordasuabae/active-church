@@ -49,18 +49,8 @@ function Events() {
           alt="b"
         />
       </Box> */}
-      <Image
-        className={styles.dots}
-        fill={true}
-        src="/Dots.png"
-        alt="background 2"
-      />
-      <Image
-        className={styles["dots-2"]}
-        fill={true}
-        src="/Dots.png"
-        alt="background 2"
-      />
+      
+      
       <Box style={style.header}>
         <Box sx={style.navbar}>
           {icons.map((icon, i) => {
@@ -104,6 +94,26 @@ function Events() {
         <Typography sx={style.box2header}>Upcoming Events</Typography>
       </Box>
       <Box style={style.main}>
+      <Box className={styles.dotsBg}>
+      <Box className={styles.dots}>
+      <Image
+        
+        layout = 'fill'
+        src="/Dots.png"
+        alt="background 2"
+        style={{marginLeft:'40px'}}
+      />
+      </Box>
+      <Box className={styles.dots}>
+      <Image
+        
+        layout = 'fill'
+        src="/Dots.png"
+        alt="background 2"
+        style={{marginLeft:'40px'}}
+      />
+      </Box>
+      </Box>
         <Box className={styles.box1}>
           <Box sx={style.divider}></Box>
           
@@ -246,14 +256,14 @@ const style = {
     background : 'url(/bg1.png)',
     backgroundRepeat : 'no-repeat',
     objectFit : 'contain',
-    backgroundSize : '1100px'
+    backgroundSize : '1000px',
   },
   overlay1: {
     position: "absolute",
     top: "-20px",
     left: "-80px",
     width: "100%",
-    height: "120vh",
+    height: "100vh",
     transform: "scale(0.9,0.9)",
   },
   overlay2: {
