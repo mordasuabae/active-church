@@ -12,6 +12,8 @@ import Drawer from './Drawer';
 export default function Navbar() {
 
 const [color, setColor] = useState(false)
+const [links, setLinks] = useState(false)
+
 const changeColor = () => {
   if(window.scrollY >= 80) {
     setColor(true)
@@ -23,12 +25,36 @@ useEffect(() => {
   window.addEventListener('scroll', changeColor);
 },[])
 
+
+
+//Navbar links should appear when onScroll//
+
+const Navigation = () => {
+  if(window.scrollY >= 80) {
+    setLinks(true)
+  }else {
+    setLinks(false)
+  }
+};
+useEffect(() => {
+  window.addEventListener('scroll', Navigation);
+},[])
+
   return (
     <Box>
     <Box sx={navbar} className={color ? 'header header-bg' : 'header'}>
+        <Box sx={{display:"flex", alignItems:"center", justifyContent:"center"}}>
         <Link href="/">
         <img src="/the-active-church white.png" width={90} alt="church Logo"/>
         </Link>
+
+        <Box sx={{display:"none"}} className={color ? 'Nav Nav-bg' : 'Navbar'}>
+         <p>Home</p>
+         <p>Events</p>
+         <p>About us</p>
+         <p>Contact us</p>
+        </Box>
+        </Box>
         <Box sx={{marginRight:"73px"}}>
         <Drawer/>
         </Box>
@@ -48,7 +74,7 @@ const navbar = {
     background:"transparent",
     position:"fixed",
     width:"100%",
-    height:"60px",
+    height:"80px",
     zIndex : '200',
     // transition:".3s ease-in"
 }

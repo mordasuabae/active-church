@@ -22,7 +22,7 @@ export default function Banner() {
               }}
               className={style.birdCloudBakcground}
             >
-              <Box
+              {/* <Box
                 sx={{
                   width: "270px",
                   height: "100%",
@@ -35,7 +35,7 @@ export default function Banner() {
                 }}
               >
                 <img src="/Cloud2.png" alt="cloud image 2" />
-              </Box>
+              </Box> */}
 
               <Box className={style.BirdGif}>
                 <label for="" className={style.bird}></label>

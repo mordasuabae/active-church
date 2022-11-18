@@ -46,3 +46,19 @@
   background: #e1eef5;
   box-shadow: 1px 10px 12px 0px rgba(0,0,0,0.18);
 }
+
+.Nav-bg {
+  transition: 0.5s ease-in;
+  display: block;
+  display: flex;
+  margin-left: 20px;
+  width: 400px;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  font-family: baumans;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+

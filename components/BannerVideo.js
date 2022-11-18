@@ -5,7 +5,7 @@ export default function BannerVideo() {
   return (
     <Box style={{ opacity: "0.8", marginTop: "30px"}}>
       <iframe
-        width="270"
+        width="245"
         height="120"
         src="https://www.youtube.com/embed/pYASKtJOyow?autoplay=1&mute=1"
         title="YouTube video player"
