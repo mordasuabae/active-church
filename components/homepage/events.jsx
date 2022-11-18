@@ -56,14 +56,22 @@ function Events() {
           {icons.map((icon, i) => {
             return icon.type == "category" ? (
               <Tooltip title={icon.eventType}>
+                <Box sx={style.icon}>
                 <Box
                   key={i}
                   sx={{
-                    ...style.icon,
+                    display : 'flex',
+                    alignItems : 'center',
+                    justifyContent : 'center',
                     background:
                       currentState.event === icon.eventType
                         ? "rgb(210, 190, 118)"
                         : style.navbar.background,
+                    borderRadius : 
+                      currentState.event === icon.eventType ? '50px' : '',
+                    height : '80%',
+                    width : '70px',
+                    transition : '1s'
                   }}
                   onClick={() => handleSelect(icon.eventType, i)}
                 >
@@ -73,6 +81,7 @@ function Events() {
                     src={`/Page-2-Icons/${icon.img}.png`}
                     alt="icon"
                   />
+                </Box>
                 </Box>
               </Tooltip>
             ) : (
@@ -241,6 +250,7 @@ const style = {
     width: "100%",
     position: "relative",
     zIndex: 100,
+    alignItems  :'center'
   },
   icon: {
     height: "100%",
@@ -296,7 +306,7 @@ const style = {
     fontFamily: displayText,
     fontSize: "38px",
     height: "74px",
-    paddingLeft: "68px",
+    paddingLeft: "65px",
     boxShadow: "0px 10px 15px -10px #222",
   },
   event: {},
@@ -322,8 +332,8 @@ const style = {
   upcomingEvent: {
     background: "purple",
     height: "40vh",
-    width: "44vh",
-    marginLeft: "70px",
+    width: "46vh",
+    marginLeft: "65px",
     position: "relative",
     zIndex: 2,
     borderRadius: "15px",

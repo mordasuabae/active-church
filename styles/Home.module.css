@@ -143,13 +143,14 @@
   /* height: 120vh; */
   display : flex;
   flex-direction: column;
-  align-items: center;
-  
+  /* align-items: center; */
+  margin-left: 90px;
   /* justify-content: center; */
   overflow: hidden;
   position : relative;
   top :-200%;
   
+
   /* top : -10%; */
   /* writing-mode :horizontal-tb */
   /* transform: rotate(90deg); */
@@ -161,7 +162,7 @@
     height: 750px;
     position: relative;
     bottom : 70px;
-    width: 80%;
+    width: 90%;
     z-index: 2;
     border-radius: 15px;
     box-shadow: 1px 1px 20px #111;
@@ -171,7 +172,7 @@
     margin : 20px 0rem;
 
    
-    animation: carousel 15s linear infinite; 
+    animation: carousel 22s linear infinite; 
     /* transform: translateY(10%);   */
 }
 @keyframes carousel{
@@ -201,7 +202,7 @@
   height : 130vh;
   display: block;
   width: 100%;
-  animation: dots 15s linear infinite;
+  animation: dots 22s linear infinite;
 }
 
 @keyframes dots{
