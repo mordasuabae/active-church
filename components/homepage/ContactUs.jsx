@@ -2,9 +2,9 @@ import { Box, Button, Typography, Input, Grid, TextField } from "@mui/material";
 import React from "react";
 import axios from "axios";
 import { useState } from "react";
-import Marquee from "react-fast-marquee";
+// import Marquee from "react-fast-marquee";
 import Modal from "@mui/material/Modal";
-import style from "../styles/Banner.module.css";
+import style from "../../styles/Banner.module.css";
 
 //import Image from './images/Montains.png'; // Import using relative path
 
