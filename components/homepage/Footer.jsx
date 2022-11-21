@@ -8,11 +8,12 @@ const Footer = () => {
       justifyContent="center"
       alignItems="center"
       width={"100%"}
-      sx={{ background: "#5A5A5A", color: "#fff" }}
+      height={67}
+      sx={{ background: "hsl(257deg 18% 32%)", color: "#fff", justifyContent:"space-evenly"}}
     >
-      <Typography>Lorem ipsum dolor sit amit</Typography>
-      <Typography>consectetur adsipiscng eli </Typography>
-      <Typography>purus sit amet luctus venenatis</Typography>
+      <Typography sx={{fontSize:"20px", fontWeight:"lighter"}}>Lorem ipsum dolor sit amit</Typography>
+      <Typography sx={{fontSize:"20px", fontWeight:"lighter"}}>consectetur adsipiscng eli </Typography>
+      <Typography sx={{fontSize:"20px", fontWeight:"lighter"}}>purus sit amet luctus venenatis</Typography>
     </Box>
   );
 };

@@ -2,11 +2,12 @@
 .BannerBackground{
     width: 100%;
     height: 100vh;
-    background-image: url('../public/City\ and\ the\ ground.jpg');
+    background-image: url('../public/City\ and\ the\ ground 02.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
   }
+
   
   .cloud4Background{
     background-image: url('../public/Cloud\ 4.png');
@@ -51,10 +52,11 @@
   .Sermon{
     width: 50px;
     position: absolute;
-    margin-left: 90px;
+    margin-left: 140px;
     padding-top: 20px;
     border-radius: 25px;
   }
+
 
 
 
@@ -76,7 +78,7 @@
 }
 
 .bird {
-  background: black;
+  background: hsl(257deg 18% 32%);
   border-radius: 50% 50% 20% 20%;
   color: white;
   height: 8px;
@@ -95,7 +97,7 @@
 
 .bird::after{
   border-radius: 100% 100% 0 0;
-  box-shadow: inset 0px 5px 0px black;
+  box-shadow: inset 0px 5px 0px hsl(257deg 18% 32%);
   width: 50px;
   height: 50px;
   margin-top: -4px;
@@ -143,10 +145,10 @@
 
 .bird2::after{
   border-radius: 100% 100% 0 0;
-  box-shadow: inset 0px 5px 0px black;
+  box-shadow: inset 0px 5px 0px hsl(257deg 18% 32%);
   width: 10px;
   height: 15px;
-  margin-top: -3px;
+  margin-top: 50px;
   margin-left: -15.1px;
   transform-origin: 100% 0%;
   animation: wing 25s linear infinite;
@@ -165,10 +167,10 @@
 
 .bird3::after{
   border-radius: 100% 100% 0 0;
-  box-shadow: inset 0px 5px 0px black;
+  box-shadow: inset 0px 5px 0px hsl(257deg 18% 32%);
   width: 10px;
   height: 20px;
-  margin-top: -10px;
+  margin-top: 20px;
   margin-right: 30px;
   transform-origin: 100% 0%;
   animation: wing 22s linear infinite;
@@ -186,10 +188,10 @@
 
 .bird4::after{
   border-radius: 100% 100% 0 0;
-  box-shadow: inset 0px 5px 0px black;
+  box-shadow: inset 0px 5px 0px hsl(257deg 18% 32%);
   width: 10px;
   height: 20px;
-  margin-top: -3px;
+  margin-top: 27px;
   margin-left: -80.1px;
   transform-origin: 100% 0%;
   animation: wing 22s linear infinite;
@@ -198,7 +200,7 @@
 /* bird 5 */
 
 .bird5{
-  background: black;
+  background: hsl(257deg 18% 32%);
   border-radius: 50% 50% 20% 20%;
   color: white;
   height: 5px;
@@ -219,7 +221,7 @@
 
 .bird5::after{
   border-radius: 100% 100% 0 0;
-  box-shadow: inset 0px 5px 0px black;
+  box-shadow: inset 0px 5px 0px hsl(257deg 18% 32%);
   width: 20px;
   height: 20px;
   margin-top: -3px;
@@ -243,15 +245,15 @@
 
 
 .bird6{
-  background: black;
+  background: hsl(257deg 18% 32%);
   border-radius: 50% 50% 20% 20%;
   color: white;
-  height: 7px;
-  width: 7px;
+  height: 4px;
+  width: 4px;
   position: absolute;
   animation: bird-ani 2s linear infinite;
   margin-right: 10px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .bird6::after,
@@ -264,11 +266,11 @@
 
 .bird6::after{
   border-radius: 100% 100% 0 0;
-  box-shadow: inset 0px 5px 0px black;
-  width: 30px;
-  height: 30px;
-  margin-top: -3px;
-  margin-left: -15.1px;
+  box-shadow: inset 0px 5px 0px hsl(257deg 18% 32%);
+  width: 10px;
+  height: 10px;
+  margin-top: -2px;
+  margin-left: -5px;
   transform-origin: 100% 0%;
   animation: wing 22s linear infinite;
 }
@@ -287,7 +289,7 @@
 /* bird 7 */
 
 .bird7{
-  background: black;
+  background: hsl(257deg 18% 32%);
   border-radius: 50% 50% 20% 20%;
   color: white;
   height: 7px;
@@ -295,7 +297,7 @@
   position: absolute;
   animation: bird-ani 2s linear infinite;
   margin-left: 120px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .bird7::after,
@@ -308,7 +310,7 @@
 
 .bird7::after{
   border-radius: 100% 100% 0 0;
-  box-shadow: inset 0px 5px 0px black;
+  box-shadow: inset 0px 5px 0px hsl(257deg 18% 32%);
   width: 30px;
   height: 30px;
   margin-top: -3px;
@@ -331,7 +333,7 @@
 /* bird 8 */
 
 .bird8{
-  background: black;
+  background: hsl(257deg 18% 32%);
   border-radius: 50% 50% 20% 20%;
   color: white;
   height: 4px;
@@ -352,11 +354,11 @@
 
 .bird8::after{
   border-radius: 100% 100% 0 0;
-  box-shadow: inset 0px 5px 0px black;
-  width: 30px;
-  height: 30px;
-  margin-top: -3px;
-  margin-left: -15.1px;
+  box-shadow: inset 0px 5px 0px hsl(257deg 18% 32%);
+  width: 8px;
+  height: 18px;
+  margin-top: -1px;
+  margin-left: -4px;
   transform-origin: 100% 0%;
   animation: wing 20s linear infinite;
 }
@@ -376,7 +378,7 @@
 /* bird 9 */
 
 .bird9{
-  background: black;
+  background: hsl(257deg 18% 32%);
   border-radius: 50% 50% 20% 20%;
   color: white;
   height: 4px;
@@ -384,7 +386,7 @@
   position: absolute;
   animation: bird-ani 2s linear infinite;
   margin-left: 120px;
-  margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .bird9::after,
@@ -397,11 +399,11 @@
 
 .bird9::after{
   border-radius: 100% 100% 0 0;
-  box-shadow: inset 0px 5px 0px black;
-  width: 10px;
-  height: 20px;
+  box-shadow: inset 0px 5px 0px hsl(257deg 18% 32%);
+  width: 8px;
+  height: 18px;
   margin-top: -1px;
-  margin-left: -5.1px;
+  margin-left: -4px;
   transform-origin: 100% 0%;
   animation: wing 22s linear infinite;
 }
@@ -415,6 +417,55 @@
   height: 2px;
   transform: rotateZ(45deg);
 }
+
+.contactUsCloud1{
+  background-image: url('../public/contactUsCloud1.png');
+  width: 20%;
+  height: 110px;
+  background-repeat:no-repeat;
+  animation: cloudContact1 12s linear infinite;
+  position: relative;
+  background-position: 10 0;
+  animation-direction: alternate-reverse;
+  margin-right: 300px;
+  z-index: 200px;
+  background-size: contain;
+  margin-top: 80px;
+}
+
+@keyframes cloudContact1 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+.contactUsCloud2{
+  background-image: url('../public/contactUsCloud2.png');
+  width: 20%;
+  height: 110px;
+  background-repeat:no-repeat;
+  animation: cloudContact1 13s linear infinite;
+  position: relative;
+  background-position: 10 0;
+  animation-direction: alternate-reverse;
+  margin-right: 200px;
+  z-index: 200px;
+  background-size: contain;
+  margin-top: 80px;
+}
+
+@keyframes cloudContact2 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
 
 
 

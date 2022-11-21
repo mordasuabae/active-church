@@ -148,6 +148,8 @@
   /* justify-content: center; */
   overflow: hidden;
   position : relative;
+  top :-200%;
+  
 
   /* top : -10%; */
   /* writing-mode :horizontal-tb */
@@ -168,12 +170,14 @@
     cursor: pointer;
     transition: 1s;
     margin : 20px 0rem;
+
    
     animation: carousel 22s linear infinite; 
     /* transform: translateY(10%);   */
 }
 @keyframes carousel{
   0%{
+      /* transform: translateY(2.5%); */
       transform: translateY(40px);
   }
   100%{
