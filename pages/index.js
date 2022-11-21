@@ -7,6 +7,7 @@ import styles from "../styles/Home.module.css";
 import Events from "../components/homepage/events";
 import { Box } from "@mui/material";
 import About from "../components/homepage/About";
+import Mission from "../components/homepage/Mission";
 
 export default function Home() {
   return (
@@ -15,7 +16,6 @@ export default function Home() {
       <Events />
 
       <About />
-
       {/* ContactUs */}
       <ContactUs />
       {/* Footer */}
