@@ -5,7 +5,7 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
 import Link from "next/link";
-import style from "../styles/Banner.module.css";
+import style from "../../styles/Banner.module.css";
 import BannerVideo from "./BannerVideo";
 
 export default function Banner() {
