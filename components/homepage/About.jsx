@@ -14,10 +14,11 @@ function About() {
     padding: "65px 100px",
     textAlign: "center",
     color: "white",
-    height: "95vh",
+    height: "684px",
     margin: "0 0 0 0",
     opacity: "0.9",
     boxShadow: "1px 1px #44445e",
+    borderBottomLeftRadius: "100px",
     // opacity:'0.7'
   }));
   return (
@@ -38,6 +39,9 @@ function About() {
         </Box> */}
       <Grid container spacing={2}>
         <Grid item xs={12}>
+          <Box>
+            <Typography className="displayText">Hello World</Typography>
+          </Box>
           <Box sx={{ borderBottom: "5px wheat solid", width: "100%" }}></Box>
 
           <Item>
@@ -52,24 +56,42 @@ function About() {
               }}
             >
               <Typography
-                className="typeText"
+                className="text"
                 sx={{ color: "#FF1493", fontSize: "40px" }}
               >
                 A
               </Typography>
-              bout Us
+              <Typography className="text" sx={{ fontSize: "40px" }}>
+                bout Us
+              </Typography>
             </Box>
             <Box sx={{ display: "flex", padding: "30px 0" }}>
               <Box sx={{ padding: "0 80px" }}>
-                <Typography sx={{ margin: "60px 0 0 0", textAlign: "justify" }}>
-                  <Link className="link" style={{ color: "wheat" }} href="/">
-                    <b>Lorem ipsum</b>
-                  </Link>{" "}
-                  dolor sit amet, consectetur adipisicing elit. Qui dicta minus
-                  molestiae vel beatae natus eveniet ratione temporibus aperiam
-                  harum alias officiis assumenda officia quibusdam deleniti eos
-                  cupiditate dolore doloribus! Lorem ipsum dolor sit amet,
-                  consectetur adipisicing elit. Qui dicta minus
+                <Typography
+                  sx={{
+                    margin: "60px 0 0 0",
+                    textAlign: "justify",
+                  }}
+                >
+                  <Box sx={{ fontSize: "17px" }}>
+                    {/* <Link className="link" style={{ color: "wheat" }} href="/">
+                      <b>Lorem ipsum</b>
+                    </Link>{" "} */}
+                    <Typography sx={{ fontWeight: "200" }}>
+                      <span
+                        className="link"
+                        style={{ color: "wheat", fontWeight: "800" }}
+                      >
+                        Lorem ipsum
+                      </span>{" "}
+                      dolor sit amet, consectetur adipisicing elit. Qui dicta
+                      minus molestiae vel beatae natus eveniet ratione
+                      temporibus aperiam harum alias officiis assumenda officia
+                      quibusdam deleniti eos cupiditate dolore doloribus! Lorem
+                      ipsum dolor sit amet, consectetur adipisicing elit. Qui
+                      dicta minus
+                    </Typography>
+                  </Box>{" "}
                 </Typography>
                 <Typography sx={{ margin: "60px 0 0 0", textAlign: "justify" }}>
                   <Link className="link" style={{ color: "wheat" }} href="/">
@@ -84,7 +106,7 @@ function About() {
                   <Link
                     className="link"
                     style={{ color: "wheat" }}
-                    href="/"
+                    href="/AboutUs"
                   >
                     <b>More Info </b>&rarr;{" "}
                   </Link>{" "}
@@ -104,14 +126,16 @@ function About() {
 
               <Box sx={{ padding: "0 80px" }}>
                 <Typography sx={{ margin: "60px 0 0 0", textAlign: "justify" }}>
-                  <Link className="link" style={{ color: "wheat" }} href="/">
-                    <b>Lorem ipsum</b>
-                  </Link>{" "}
-                  dolor sit amet, consectetur adipisicing elit. Qui dicta minus
-                  molestiae vel beatae natus eveniet ratione temporibus aperiam
-                  harum alias officiis assumenda officia quibusdam deleniti eos
-                  cupiditate dolore doloribus! Lorem ipsum dolor sit amet,
-                  consectetur adipisicing elit. Qui dicta minus
+                  <Typography sx={{ fontSize: "17px" }}>
+                    <Link className="link" style={{ color: "wheat" }} href="/">
+                      <b sx={{ fontWeight: "200" }}>Lorem ipsum</b>
+                    </Link>{" "}
+                    dolor sit amet, consectetur adipisicing elit. Qui dicta
+                    minus molestiae vel beatae natus eveniet ratione temporibus
+                    aperiam harum alias officiis assumenda officia quibusdam
+                    deleniti eos cupiditate dolore doloribus! Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Qui dicta minus
+                  </Typography>
                 </Typography>
                 <Typography sx={{ margin: "60px 0 0 0", textAlign: "justify" }}>
                   <Link className="link" style={{ color: "wheat" }} href="/">
@@ -130,8 +154,8 @@ function About() {
                     backgroundSize: "cover",
                   }}
                 ></Box>
-                <img src="/Tree 1.png" />
-                <img src="/Tree 1.png" />
+                {/* <img src="/Tree 1.png" />
+                <img src="/Tree 1.png" /> */}
               </Box>
             </Box>
           </Item>

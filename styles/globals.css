@@ -14,37 +14,52 @@
 .displayText {
   font-family: bauhaus-93;
 }
-.typeText {
+
+.text {
   font-family: baumans;
-  font-weight: 800;
-  font-weight: bold ;
+  font-weight: 200;
 }
 
-.aboutus{
+.aboutusp {
+  font-family: baumans;
+  font-weight: 200px;
+  color: "#42475b";
+  font-size: 17px;
+}
+
+.box {
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.boxtwo {
+  border-radius: 100px;
+}
+
+.aboutus {
   text-align: center;
   width: 100%;
-  height:1000px;
-  background-image:url('/City.png');
-  background-size:contain;
+  height: 940px;
+  background-image: url("/City.png");
+  background-size: contain;
   color: white;
   background-repeat: no-repeat;
   font-size: large;
   font-family: baumans;
 }
 
-.paper{
+.paper {
   background-color: white;
 }
 
-.link{
+.link {
   list-style: none;
   text-decoration: none;
-  font-family: baumans;
 }
 
 .header-bg {
   background: #e1eef5;
-  box-shadow: 1px 10px 12px 0px rgba(0,0,0,0.18);
+  box-shadow: 1px 10px 12px 0px rgba(0, 0, 0, 0.18);
 }
 
 .Nav-bg {
@@ -61,4 +76,3 @@
   color: white;
   text-decoration: none;
 }
-

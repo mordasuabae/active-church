@@ -59,9 +59,7 @@ export default function Navbar() {
           >
             <p>Home</p>
             <p>Events</p>
-            <Link href="/Mission">
-              <p>About us</p>
-            </Link>
+            <p>About us</p>
             <p>Contact us</p>
           </Box>
         </Box>
