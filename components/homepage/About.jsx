@@ -1,98 +1,264 @@
-import React from 'react'
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
-import { styled } from '@mui/material/styles';
-import Typography from '@mui/material/Typography';
-import Link from 'next/link'
+import React from "react";
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
+import { styled } from "@mui/material/styles";
+import Typography from "@mui/material/Typography";
+import Link from "next/link";
+import { B } from "react-html5video/dist";
+import Test from "../homepage/Test";
 
 function About() {
-  
-const Item = styled(Paper)(({ theme }) => ({
-  // backgroundColor:'rgb(169,169,169)',
-  // background: "#57595D",
-  background:'rgb(68,68,94)',
-  padding:'65px 100px',
-  textAlign: 'center',
-  color:'white',
-  height:'95vh',
-  margin:'0 0 0 0',
-  opacity:'0.9',
-  boxShadow:'1px 1px #44445e'
-  // opacity:'0.7'
-}));
   return (
-    <Box sx={{
-      display: 'flex',
-      flexWrap: 'wrap',
-      '& > :not(style)': {
-        
-        padding:'0 75px',
-        height: 128,
-        flexGrow: 1,
-        
-      },
-    }} className='aboutus' >
-        {/* <Box style={{height:'100vh',}} >
-  
-        </Box> */}
-        <Grid container spacing={2}>
-        <Grid  item xs={12}>
-        <Box sx={{borderBottom:'5px wheat solid',width:'100%',}}></Box>
-            
-        <Item>
-         
-          <Box className='typeText' sx={{color:'white',display:'flex',justifyContent:'center',fontSize:'40px',alignItems:'center',}}>
-           
-
-            <Typography className='typeText' sx={{color:'#FF1493',fontSize:'40px',}}>A</Typography>bout Us
-          
-            
-            </Box>
-            <Box sx={{display:'flex',padding:'30px 0'}}>
-                
-             
-              <Box sx={{padding:'0 80px'}}>
-                <Typography sx={{margin:'60px 0 0 0',textAlign:'justify',}}>
-                <Link className='link' style={{color:'wheat'}} href='/'><b>Lorem ipsum</b></Link> dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus 
-                  </Typography>
-              <Typography sx={{margin:'60px 0 0 0',textAlign:'justify'}} ><Link className='link' style={{color:'wheat'}} href='/'><b>Rerum</b></Link> sed nulla eum vero expedita ex delectus voluptates rem at neque quos facere sequi unde optio aliquam!</Typography>
-              <Typography sx={{margin:'50px 0 0 65%',justifyContent:'flex-end'}}><Link className='link' style={{color:'wheat'}} href='/'><b>More Info </b>&rarr; </Link> </Typography>
-              <Box className='layer' sx={{margin:'-60px 0 0 -75px',width:'130px',height:'130px',backgroundImage:`url('/Flowers.png')`,backgroundRepeat:'no-repeat',backgroundSize:'cover'}}>
-                </Box>
-              </Box>
-                
-            
-              
-              <Box sx={{padding:'0 80px'}}>
-                <Typography sx={{margin:'60px 0 0 0',textAlign:'justify'}} >
-                <Link className='link' style={{color:'wheat'}} href='/'><b>Lorem ipsum</b></Link>  dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus 
+    <Box
+      sx={{
+        display: "flex",
+        // border: "5px solid white",
+        "& > :not(style)": {
+          padding: "0 90px",
+          height: 128,
+        },
+      }}
+      className="aboutus"
+    >
+      <Grid container spacing={2}>
+        <Grid item xs={12}>
+          <Box sx={{ borderBottom: "5px wheat solid", width: "100%" }}></Box>
+          <Box sx={styles.container}>
+            <Box sx={styles.contentBox}>
+              <Box
+                className="typeText"
+                sx={{
+                  color: "white",
+                  display: "flex",
+                  justifyContent: "center",
+                  fontSize: "40px",
+                  alignItems: "center",
+                }}
+              >
+                <Typography
+                  className="text"
+                  sx={{
+                    color: "#FF1493",
+                    fontSize: "40px",
+                    margin: "0 0 0 20px",
+                  }}
+                >
+                  A
                 </Typography>
-                <Typography sx={{margin:'60px 0 0 0',textAlign:'justify'}}><Link className='link' style={{color:'wheat'}} href='/'><b>Rerum</b></Link> sed nulla eum vero expedita ex delectus voluptates rem at neque quos facere sequi unde optio aliquam!</Typography>
-                <Box sx={{margin:'-550px 0 0 115%',width:'145px',height:'130px',backgroundImage:`url('/Flower.png')`,backgroundRepeat:'no-repeat',backgroundSize:'cover'}}>
-                </Box>
-                <img src='/Tree 1.png'/>
-                <img src='/Tree 1.png'/>
-                
-               </Box>
-            </Box>
-            
+                <Typography
+                  className="displayText viewText"
+                  variant={"h2"}
+                  fontSize={40}
+                  sx={{ fontSize: "40px" }}
+                >
+                  bout Us
+                </Typography>
+              </Box>
 
-            </Item>
-            {/* <Item>
-            </Item> */}
-{/*       
-      <Paper elevation={3} />About us */}
+              <Box
+                sx={{
+                  display: "flex",
+                  padding: "30px 80px",
+                  // border: "1px solid white",
+                  position: "relative",
+                }}
+              >
+                {" "}
+                <img
+                  style={{
+                    height: "200px",
+                    width: "30px",
+                    margin: "-20px 0 0 0",
+                  }}
+                  src="/Tree 1.png"
+                />
+                <Box
+                  sx={{
+                    padding: "0 0",
+                    // border: "1px solid white",
+                    width: "50%",
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      margin: "20px 0 0 0",
+                      textAlign: "justify",
+                    }}
+                  >
+                    <Box
+                      sx={{
+                        fontSize: "17px",
+                        padding: "0 80px",
+                        display: "flex",
+                      }}
+                    >
+                      <Typography sx={{ fontWeight: "300" }}>
+                        <span
+                          className="link"
+                          style={{ color: "wheat", fontWeight: "800" }}
+                        >
+                          Lorem ipsum
+                        </span>{" "}
+                        {/* <b> */}
+                        dolor sit amet, consectetur adipisicing elit. Qui dicta
+                        minus molestiae vel beatae natus eveniet ratione
+                        temporibus aperiam harum alias officiis assumenda
+                        officia quibusdam deleniti eos cupiditate dolore
+                        doloribus! Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Qui dicta minus
+                        {/* </b> */}
+                      </Typography>
+                    </Box>{" "}
+                  </Typography>
+                  <Typography
+                    sx={{ margin: "60px 0 0 0", textAlign: "justify" }}
+                  >
+                    <Box>
+                      <Typography sx={{ fontWeight: "300", padding: "0 80px" }}>
+                        <span
+                          className="link"
+                          style={{ color: "wheat", fontWeight: "800" }}
+                        >
+                          Rerum
+                        </span>{" "}
+                        sed nulla eum vero expedita ex delectus voluptates rem
+                        at neque quos facere sequi unde optio aliquam!
+                      </Typography>
+                    </Box>
+                  </Typography>
+                  <Typography
+                    sx={{ margin: "50px 0 0 52%", justifyContent: "flex-end" }}
+                  >
+                    <Link
+                      className="link"
+                      style={{ color: "wheat" }}
+                      href="/AboutUs"
+                    >
+                      <b>More Info </b>&rarr;{" "}
+                    </Link>{" "}
+                  </Typography>
+
+                  <Box
+                    className="layer"
+                    sx={{
+                      margin: "-40px 0 0 10px",
+                      width: "130px",
+                      height: "130px",
+                      backgroundImage: `url('/Flowers.png')`,
+                      backgroundRepeat: "no-repeat",
+                      backgroundSize: "cover",
+                    }}
+                  ></Box>
+                </Box>
+                <Box
+                  sx={{
+                    padding: "0 0",
+                    // border: "1px solid white",
+                    width: "50%",
+                  }}
+                >
+                  <Typography
+                    sx={{ margin: "20px 0 0 0", textAlign: "justify" }}
+                  >
+                    <Box
+                      sx={{
+                        fontSize: "17px",
+                        padding: "0 75px",
+                        display: "flex",
+                      }}
+                    >
+                      <Typography sx={{ fontWeight: "300" }}>
+                        <span
+                          className="link"
+                          style={{ color: "wheat", fontWeight: "800" }}
+                        >
+                          Lorem ipsum
+                        </span>{" "}
+                        dolor sit amet, consectetur adipisicing elit. Qui dicta
+                        minus molestiae vel beatae natus eveniet ratione
+                        temporibus aperiam harum alias officiis assumenda
+                        officia quibusdam deleniti eos cupiditate dolore
+                        doloribus! Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Qui dicta minus
+                      </Typography>
+                    </Box>
+                  </Typography>
+                  <Typography
+                    sx={{ margin: "60px 0 0 0", textAlign: "justify" }}
+                  >
+                    <Box>
+                      <Typography sx={{ fontWeight: "300", padding: "0 75px" }}>
+                        <span
+                          className="link"
+                          style={{ color: "wheat", fontWeight: "800" }}
+                        >
+                          Rerum
+                        </span>{" "}
+                        sed nulla eum vero expedita ex delectus voluptates rem
+                        at neque quos facere sequi unde optio aliquam!
+                      </Typography>
+                    </Box>
+                  </Typography>
+                  <Box
+                    sx={{
+                      // margin: "-482px 0 0 105%",
+                      position: "absolute",
+                      top: "-0",
+                      right: "0",
+
+                      left: "20",
+                      // justifyContent: "flex-end",
+                      // display: "flex",
+                      width: "145px",
+                      height: "130px",
+                      backgroundImage: `url('/Flower.png')`,
+                      backgroundRepeat: "no-repeat",
+                      backgroundSize: "cover",
+                      margin: "-130px 0 0 10%",
+                    }}
+                  ></Box>
+                </Box>
+                <img
+                  style={{
+                    height: "200px",
+                    width: "30px",
+                    position: "absolute",
+                    bottom: "50px",
+                    right: "50px",
+                  }}
+                  src="/Tree 1.png"
+                />
+              </Box>
+            </Box>
+          </Box>
         </Grid>
-          {/* <Paper elevation={0} />
-      <Paper />
-      <Paper elevation={3} />   */}
-        </Grid>
-        
+      </Grid>
     </Box>
-  )
+  );
 }
 
-export default About
+export default About;
+
+const styles = {
+  // container: {
+  //   minHeight: "calc(100vh - 70px)",
+  //   backgroundSize: "cover",
+  //   display: "flex",
+  //   alignItems: "center",
+  //   width: "100%",
+  //   justifyContent: "center",
+  // },
+  contentBox: {
+    width: "100%",
+    background: "rgb(68,68,94,0.9)",
+    padding: "65px 0",
+    textAlign: "center",
+    color: "white",
+    height: "685px",
+    margin: "0 0 0 0",
+    // opacity: "0.9",
+    boxShadow: "1px 1px #44445e",
+    borderBottomLeftRadius: "100px",
+  },
+};
