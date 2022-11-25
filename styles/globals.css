@@ -109,3 +109,18 @@
     background-position: right;
   }
 }
+
+.leaf {
+  transform: rotate(10deg);
+  animation: anime 5s infinite alternate;
+  transition: 10s;
+}
+
+@keyframes anime {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}

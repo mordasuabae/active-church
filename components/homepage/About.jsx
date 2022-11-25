@@ -149,6 +149,7 @@ function About() {
                       backgroundImage: `url('/Flowers.png')`,
                       backgroundRepeat: "no-repeat",
                       backgroundSize: "cover",
+                      // border: "1px solid white",
                     }}
                   ></Box>
                 </Box>
@@ -202,12 +203,13 @@ function About() {
                     </Box>
                   </Typography>
                   <Box
+                    className="leaf"
                     sx={{
                       zIndex: "100",
                       position: "absolute",
                       top: "-0.9%",
                       right: "-1%",
-                      // border: "1px solid white",
+
                       left: "20",
                       width: "145px",
                       height: "130px",
