@@ -1,17 +1,18 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import { Typography } from "@mui/material";
+import Link from "next/link";
 
 const Mission = () => {
   return (
     <Box
       className="typeText"
       sx={{
-        height: "2600px",
+        height: "2610px",
         width: "100%",
         color: "black",
         backgroundColor: "white",
-        padding: "60px 100px",
+        padding: "0 100px",
       }}
     >
       <Box
@@ -76,7 +77,7 @@ const Mission = () => {
             width: "100%",
             color: "#42475b",
           }}
-          className="typeText"
+          className="texttwo"
         >
           <b>Our Mission</b>
         </Typography>
@@ -106,10 +107,107 @@ const Mission = () => {
             backgroundImage: `url('/Rectangle.png')`,
             backgroundSize: "contain",
             backgroundRepeat: "no-repeat",
-
+            display: "flex",
             backgroundColor: "black",
+            position: "relative",
           }}
-        ></Box>
+        >
+          <Box
+            sx={{
+              // border: "1px solid yellow",
+              width: "50%",
+              justifyContent: "flex-end",
+              position: "absolute",
+              right: "0",
+              color: "white",
+              height: "100%",
+              padding: "30px 110px",
+            }}
+          >
+            <Box
+              sx={{
+                // border: "1px solid white",
+                height: "100%",
+                padding: "75px 0 ",
+              }}
+            >
+              <Typography
+                sx={{ fontSize: "40px", color: "white", fontWeight: "800px" }}
+                variant={"h3"}
+                className="texttwo"
+              >
+                Meet our Pastors
+              </Typography>
+              {/* sx={{ margin: "10px 0 0 0" }} */}
+              <Typography
+                sx={{
+                  fontWeight: "300",
+                  margin: "20px 0 0 0",
+                  textAlign: "justify",
+                }}
+              >
+                <span
+                  className="link"
+                  style={{ color: "wheat", fontWeight: "800" }}
+                >
+                  Lorem ipsum
+                </span>{" "}
+                {/* <b> */}
+                dolor sit amet, consectetur adipisicing elit. Qui dicta minus
+                molestiae temporibus aperiam harum alias officiis assumenda
+                officia quibusdam deleniti eos cupiditate dolore doloribus!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                {/* </b> */}
+              </Typography>
+              <Typography
+                sx={{
+                  fontWeight: "300",
+                  margin: "10px 0 0 0",
+                  textAlign: "justify",
+                }}
+              >
+                <span
+                  className="link"
+                  style={{ color: "wheat", fontWeight: "800" }}
+                >
+                  Lorem ipsum
+                </span>{" "}
+                {/* <b> */}
+                dolor sit amet, consectetur adipisicing elit. Qui dicta minus
+                molestiae temporibus aperiam harum alias officiis assumenda
+                officia quibusdam deleniti eos cupiditate dolore doloribus!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                {/* </b> */}
+              </Typography>
+              <Typography
+                sx={{
+                  fontWeight: "300",
+                  margin: "10px 0 0 0",
+                  textAlign: "justify",
+                }}
+              >
+                <span
+                  className="link"
+                  style={{ color: "wheat", fontWeight: "800" }}
+                >
+                  Lorem ipsum
+                </span>{" "}
+                {/* <b> */}
+                dolor sit amet, consectetur adipisicing elit. Qui dicta minus
+                molestiae vel beatae natus eveniet ratione temporibus aperiam
+                harum alias officiis
+                {/* </b> */}
+              </Typography>
+              <Typography
+                sx={{ margin: "20px 0 0 0", justifyContent: "flex-end" }}
+              >
+                <Link className="link" style={{ color: "wheat" }} href="/">
+                  <b>Read More </b>&rarr;{" "}
+                </Link>{" "}
+              </Typography>
+            </Box>
+          </Box>
+        </Box>
         <Box
           sx={{
             height: "250px",
@@ -126,13 +224,13 @@ const Mission = () => {
               width: "100%",
               color: "#42475b",
             }}
-            className="typeText"
+            className="texttwo"
           >
             <b>Our Vision</b>
           </Typography>
           <Box
             sx={{
-              height: "150px",
+              height: "120px",
               padding: "20px 0",
               textAlign: "center",
               color: "#42475b",
@@ -164,7 +262,7 @@ const Mission = () => {
                 width: "100%",
                 color: "#42475b",
               }}
-              className="typeText"
+              className="texttwo"
             >
               <b>Meet our Team</b>
             </Typography>
@@ -172,142 +270,373 @@ const Mission = () => {
               sx={{
                 minheight: "10%",
                 display: "flex",
+                margin: "20px 0 0 0",
               }}
             >
               <Box
                 sx={{
-                  width: "25%",
-                  height: "200px",
-                  padding: "10px 45px",
+                  width: "20%",
+                  height: "250px",
+                  padding: "10px 22px",
                 }}
               >
                 <Box
                   sx={{
-                    border: "1px black solid",
                     borderRadius: "800px",
-                    height: "170px",
-                    width: "170px",
+                    height: "120px",
+                    width: "120px",
+                    backgroundImage: `url('/andreapiacquadio.jpg')`,
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    textAlign: "center",
+                    margin: "0 0 0 25px",
                   }}
                 ></Box>
+                <Typography sx={{ margin: "30px 0 0 60px", color: "#42475b" }}>
+                  NAME
+                </Typography>
+                <Typography sx={{ margin: "-4px 0 0 45px", color: "#42475b" }}>
+                  SURNAME
+                </Typography>
+                <Typography
+                  sx={{
+                    margin: "-4px 0 0 13%",
+                    fontSize: "12px",
+                    color: "#42475b",
+                  }}
+                >
+                  Director of Active Youth
+                </Typography>
               </Box>
               <Box
                 sx={{
-                  width: "25%",
-                  height: "200px",
-                  padding: "10px 45px",
+                  width: "20%",
+                  height: "250px",
+                  padding: "10px 22px",
                 }}
               >
                 <Box
                   sx={{
-                    border: "1px black solid",
                     borderRadius: "800px",
-                    height: "170px",
-                    width: "170px",
+                    height: "120px",
+                    width: "120px",
+                    backgroundImage: `url('/nappytwo.jpg')`,
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    textAlign: "center",
+                    margin: "0 0 0 25px",
                   }}
                 ></Box>
+                <Typography sx={{ margin: "30px 0 0 60px", color: "#42475b" }}>
+                  NAME
+                </Typography>
+                <Typography sx={{ margin: "-4px 0 0 45px", color: "#42475b" }}>
+                  SURNAME
+                </Typography>
+                <Typography
+                  sx={{
+                    margin: "-4px 0 0 13%",
+                    fontSize: "12px",
+                    color: "#42475b",
+                  }}
+                >
+                  Director of Active Youth
+                </Typography>
               </Box>
               <Box
                 sx={{
-                  width: "25%",
-                  height: "200px",
-                  padding: "10px 45px",
+                  width: "20%",
+                  height: "250px",
+                  padding: "10px 22px",
                 }}
               >
                 <Box
                   sx={{
-                    border: "1px black solid",
                     borderRadius: "800px",
-                    height: "170px",
-                    width: "170px",
+                    height: "120px",
+                    width: "120px",
+                    backgroundImage: `url('/linkedin.jpg')`,
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    textAlign: "center",
+                    margin: "0 0 0 25px",
                   }}
                 >
                   {" "}
                 </Box>{" "}
+                <Typography sx={{ margin: "30px 0 0 60px", color: "#42475b" }}>
+                  NAME
+                </Typography>
+                <Typography sx={{ margin: "-4px 0 0 45px", color: "#42475b" }}>
+                  SURNAME
+                </Typography>
+                <Typography
+                  sx={{
+                    margin: "-4px 0 0 13%",
+                    fontSize: "12px",
+                    color: "#42475b",
+                  }}
+                >
+                  Director of Active Youth
+                </Typography>
               </Box>
               <Box
                 sx={{
-                  width: "25%",
-                  height: "200px",
-                  padding: "10px 45px",
+                  width: "20%",
+                  height: "250px",
+                  padding: "10px 22px",
                 }}
               >
                 <Box
                   sx={{
-                    border: "1px black solid",
                     borderRadius: "800px",
-                    height: "170px",
-                    width: "170px",
+                    height: "120px",
+                    width: "120px",
+                    backgroundImage: `url('/nappy.jpg')`,
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    textAlign: "center",
+                    margin: "0 0 0 25px",
                   }}
                 >
                   {" "}
                 </Box>{" "}
+                <Typography sx={{ margin: "30px 0 0 60px", color: "#42475b" }}>
+                  NAME
+                </Typography>
+                <Typography sx={{ margin: "-4px 0 0 45px", color: "#42475b" }}>
+                  SURNAME
+                </Typography>
+                <Typography
+                  sx={{
+                    margin: "-4px 0 0 13%",
+                    fontSize: "12px",
+                    color: "#42475b",
+                  }}
+                >
+                  Director of Active Youth
+                </Typography>
+              </Box>
+              <Box
+                sx={{
+                  width: "20%",
+                  height: "250px",
+                  padding: "10px 22px",
+                }}
+              >
+                <Box
+                  sx={{
+                    borderRadius: "800px",
+                    height: "120px",
+                    width: "120px",
+                    backgroundImage: `url('/simonrobben.jpg')`,
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    textAlign: "center",
+                    margin: "0 0 0 25px",
+                  }}
+                >
+                  {" "}
+                </Box>{" "}
+                <Typography sx={{ margin: "30px 0 0 60px", color: "#42475b" }}>
+                  NAME
+                </Typography>
+                <Typography sx={{ margin: "-4px 0 0 45px", color: "#42475b" }}>
+                  SURNAME
+                </Typography>
+                <Typography
+                  sx={{
+                    margin: "-4px 0 0 13%",
+                    fontSize: "12px",
+                    color: "#42475b",
+                  }}
+                >
+                  Director of Active Youth
+                </Typography>
               </Box>
             </Box>
             <Box sx={{ display: "flex" }}>
               <Box
                 sx={{
-                  width: "25%",
-                  height: "200px",
-                  padding: "10px 45px",
+                  width: "20%",
+                  height: "250px",
+                  padding: "10px 22px",
+                  margin: "50px 0 0 0",
                 }}
               >
                 <Box
                   sx={{
-                    border: "1px black solid",
                     borderRadius: "800px",
-                    height: "170px",
-                    width: "170px",
+                    height: "120px",
+                    width: "120px",
+                    backgroundImage: `url('/haticebaran.jpg')`,
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    textAlign: "center",
+                    margin: "0 0 0 25px",
                   }}
                 ></Box>
+                <Typography sx={{ margin: "30px 0 0 60px", color: "#42475b" }}>
+                  NAME
+                </Typography>
+                <Typography sx={{ margin: "-4px 0 0 45px", color: "#42475b" }}>
+                  SURNAME
+                </Typography>
+                <Typography
+                  sx={{
+                    margin: "-4px 0 0 13%",
+                    fontSize: "12px",
+                    color: "#42475b",
+                  }}
+                >
+                  Director of Active Youth
+                </Typography>
               </Box>
               <Box
                 sx={{
-                  width: "25%",
-                  height: "200px",
-                  padding: "10px 45px",
+                  width: "20%",
+                  height: "250px",
+                  padding: "10px 22px",
+                  margin: "50px 0 0 0",
                 }}
               >
                 <Box
                   sx={{
-                    border: "1px black solid",
                     borderRadius: "800px",
-                    height: "170px",
-                    width: "170px",
+                    height: "120px",
+                    width: "120px",
+                    backgroundImage: `url('/anastasiashuraeva.jpg')`,
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    textAlign: "center",
+                    margin: "0 0 0 25px",
                   }}
                 ></Box>
+                <Typography sx={{ margin: "30px 0 0 60px", color: "#42475b" }}>
+                  NAME
+                </Typography>
+                <Typography sx={{ margin: "-4px 0 0 45px", color: "#42475b" }}>
+                  SURNAME
+                </Typography>
+                <Typography
+                  sx={{
+                    margin: "-4px 0 0 13%",
+                    fontSize: "12px",
+                    color: "#42475b",
+                  }}
+                >
+                  Director of Active Youth
+                </Typography>
               </Box>
               <Box
                 sx={{
-                  width: "25%",
-                  height: "200px",
-                  padding: "10px 45px",
+                  width: "20%",
+                  height: "250px",
+                  padding: "10px 22px",
+                  margin: "50px 0 0 0",
                 }}
               >
                 <Box
                   sx={{
-                    border: "1px black solid",
                     borderRadius: "800px",
-                    height: "170px",
-                    width: "170px",
+                    height: "120px",
+                    width: "120px",
+                    backgroundImage: `url('/tarzinejackson.jpg')`,
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    textAlign: "center",
+                    margin: "0 0 0 25px",
                   }}
                 ></Box>
+                <Typography sx={{ margin: "30px 0 0 60px", color: "#42475b" }}>
+                  NAME
+                </Typography>
+                <Typography sx={{ margin: "-4px 0 0 45px", color: "#42475b" }}>
+                  SURNAME
+                </Typography>
+                <Typography
+                  sx={{
+                    margin: "-4px 0 0 13%",
+                    fontSize: "12px",
+                    color: "#42475b",
+                  }}
+                >
+                  Director of Active Youth
+                </Typography>
               </Box>
               <Box
                 sx={{
                   // border: "1px solid red",
-                  width: "25%",
-                  height: "200px",
-                  padding: "10px 45px",
+                  width: "20%",
+                  height: "250px",
+                  padding: "10px 22px",
+                  margin: "50px 0 0 0",
                 }}
               >
                 <Box
                   sx={{
-                    border: "1px black solid",
                     borderRadius: "800px",
-                    height: "170px",
-                    width: "170px",
+                    height: "120px",
+                    width: "120px",
+                    backgroundImage: `url('/dillon-kydd.jpg')`,
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    textAlign: "center",
+                    margin: "0 0 0 25px",
                   }}
                 ></Box>
+                <Typography sx={{ margin: "30px 0 0 60px", color: "#42475b" }}>
+                  NAME
+                </Typography>
+                <Typography sx={{ margin: "-4px 0 0 45px", color: "#42475b" }}>
+                  SURNAME
+                </Typography>
+                <Typography
+                  sx={{
+                    margin: "-4px 0 0 13%",
+                    fontSize: "12px",
+                    color: "#42475b",
+                  }}
+                >
+                  Director of Active Youth
+                </Typography>
+              </Box>
+              <Box
+                sx={{
+                  // border: "1px solid red",
+                  width: "20%",
+                  height: "250px",
+                  padding: "10px 22px",
+                  margin: "50px 0 0 0",
+                }}
+              >
+                <Box
+                  sx={{
+                    borderRadius: "800px",
+                    height: "120px",
+                    width: "120px",
+                    backgroundImage: `url('/ezekixl-akinnewu.jpg')`,
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    textAlign: "center",
+                    margin: "0 0 0 25px",
+                  }}
+                ></Box>
+                <Typography sx={{ margin: "30px 0 0 60px", color: "#42475b" }}>
+                  NAME
+                </Typography>
+                <Typography sx={{ margin: "-4px 0 0 45px", color: "#42475b" }}>
+                  SURNAME
+                </Typography>
+                <Typography
+                  sx={{
+                    margin: "-4px 0 0 13%",
+                    fontSize: "12px",
+                    color: "#42475b",
+                  }}
+                >
+                  Director of Active Youth
+                </Typography>
               </Box>
             </Box>
 

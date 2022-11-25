@@ -7,13 +7,13 @@ import Typography from "@mui/material/Typography";
 import Link from "next/link";
 import { B } from "react-html5video/dist";
 import Test from "../homepage/Test";
+import { Gradient } from "@mui/icons-material";
 
 function About() {
   return (
     <Box
       sx={{
         display: "flex",
-        // border: "5px solid white",
         "& > :not(style)": {
           padding: "0 90px",
           height: 128,
@@ -38,11 +38,10 @@ function About() {
               >
                 <Typography
                   className="text"
-                  sx={{
-                    color: "#FF1493",
-                    fontSize: "40px",
-                    margin: "0 0 0 20px",
-                  }}
+                  sx={{ color: "#FF00FF" }}
+                  className="displayText viewText"
+                  variant={"h2"}
+                  fontSize={40}
                 >
                   A
                 </Typography>
@@ -60,7 +59,7 @@ function About() {
                 sx={{
                   display: "flex",
                   padding: "30px 80px",
-                  // border: "1px solid white",
+
                   position: "relative",
                 }}
               >
@@ -70,6 +69,8 @@ function About() {
                     height: "200px",
                     width: "30px",
                     margin: "-20px 0 0 0",
+                    position: "absolute",
+                    left: "40px",
                   }}
                   src="/Tree 1.png"
                 />
@@ -142,7 +143,7 @@ function About() {
                   <Box
                     className="layer"
                     sx={{
-                      margin: "-40px 0 0 10px",
+                      margin: "-5px 0 0 10px",
                       width: "130px",
                       height: "130px",
                       backgroundImage: `url('/Flowers.png')`,
@@ -202,30 +203,30 @@ function About() {
                   </Typography>
                   <Box
                     sx={{
-                      // margin: "-482px 0 0 105%",
+                      zIndex: "100",
                       position: "absolute",
-                      top: "-0",
-                      right: "0",
-
+                      top: "-0.9%",
+                      right: "-1%",
+                      // border: "1px solid white",
                       left: "20",
-                      // justifyContent: "flex-end",
-                      // display: "flex",
                       width: "145px",
                       height: "130px",
                       backgroundImage: `url('/Flower.png')`,
                       backgroundRepeat: "no-repeat",
                       backgroundSize: "cover",
-                      margin: "-130px 0 0 10%",
+                      margin: "-120px 0 0 10%",
                     }}
                   ></Box>
                 </Box>
                 <img
+                  className="dex"
                   style={{
                     height: "200px",
                     width: "30px",
                     position: "absolute",
                     bottom: "50px",
                     right: "50px",
+                    // zIndex: 2,
                   }}
                   src="/Tree 1.png"
                 />
@@ -260,5 +261,7 @@ const styles = {
     // opacity: "0.9",
     boxShadow: "1px 1px #44445e",
     borderBottomLeftRadius: "100px",
+    position: "relative",
+    backgroundImage: "linear-gradient(45deg,#ff2fe5,#95bdcd 5%,#e7d38a )",
   },
 };

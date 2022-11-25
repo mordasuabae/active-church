@@ -20,11 +20,16 @@
   font-weight: 200;
 }
 
+.texttwo {
+  color: "#42475b";
+  font-family: baumans;
+}
+
 .aboutusp {
   font-family: baumans;
   font-weight: 200px;
   color: "#42475b";
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .box {
@@ -79,4 +84,12 @@
 
 .icons {
   list-style: none;
+}
+
+.grad {
+  background-image: radial-gradient(#ff2fe5, #e7d38a, #95bdcd, 0.9);
+}
+
+.dex {
+  z-index: 1;
 }
