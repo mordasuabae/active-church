@@ -86,10 +86,26 @@
   list-style: none;
 }
 
-.grad {
+/* .grad {
   background-image: radial-gradient(#ff2fe5, #e7d38a, #95bdcd, 0.9);
-}
+} */
 
 .dex {
   z-index: 1;
+}
+
+.test {
+  /* border: 5px white solid !important; */
+  /* background-color: red; */
+  background-size: 150%;
+  animation: bg-animation 5s infinite alternate;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }

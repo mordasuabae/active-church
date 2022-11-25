@@ -25,7 +25,7 @@ function About() {
         <Grid item xs={12}>
           <Box sx={{ borderBottom: "5px wheat solid", width: "100%" }}></Box>
           <Box sx={styles.container}>
-            <Box sx={styles.contentBox}>
+            <Box className="test" sx={styles.contentBox}>
               <Box
                 className="typeText"
                 sx={{
@@ -258,10 +258,11 @@ const styles = {
     color: "white",
     height: "685px",
     margin: "0 0 0 0",
-    // opacity: "0.9",
     boxShadow: "1px 1px #44445e",
     borderBottomLeftRadius: "100px",
     position: "relative",
-    backgroundImage: "linear-gradient(45deg,#ff2fe5,#95bdcd 5%,#e7d38a )",
+    backgroundImage:
+      "linear-gradient(45deg,#ff2fe5,#95bdcd 5%,transparent ,#e7d38a)",
+    backgroundSize: "150%",
   },
 };
