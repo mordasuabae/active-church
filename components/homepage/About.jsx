@@ -1,13 +1,13 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
-import { styled } from "@mui/material/styles";
+// import Paper from "@mui/material/Paper";
+// import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import Link from "next/link";
-import { B } from "react-html5video/dist";
-import Test from "../homepage/Test";
-import { Gradient } from "@mui/icons-material";
+// import { B } from "react-html5video/dist";
+// import Test from "../homepage/Test";
+// import { Gradient } from "@mui/icons-material";
 
 function About() {
   return (
