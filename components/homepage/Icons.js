@@ -22,17 +22,17 @@ const Icons = () => {
         style={{
           display: "flex",
           justfiyContent: "space-evenly",
-          margin: "0 0 0 80px",
+          margin: "0 0 0 48px",
         }}
       >
-        <li style={{ width: "100px" }}>
+        <li style={{ width: "50px" }}>
           {" "}
           <InstagramIcon />
         </li>
-        <li style={{ width: "100px" }}>
+        <li style={{ width: "50px" }}>
           <TwitterIcon />
         </li>
-        <li style={{ width: "100px" }}>
+        <li style={{ width: "50px" }}>
           {" "}
           <FacebookIcon />
         </li>

@@ -13,12 +13,13 @@ const Test = () => {
         background: "hsl(257deg 18% 32%)",
         color: "#fff",
         justifyContent: "space-evenly",
+        padding: "20px 0 0 0",
       }}
     >
       <Typography
         className="text"
         sx={{
-          color: "#FF1493",
+          color: "#f939e2",
           fontSize: "40px",
           margin: "0 0 0 20px",
           display: "flex",
